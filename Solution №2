@@ -1,0 +1,3 @@
+var array = new string[] { "Tiger", "dog", "cat", "rat", "lion", "ape", "ox" };
+string[] group = Array.FindAll(array, animals => animals.Length <= 3);
+foreach (var animals in group) Console.WriteLine("[{0}]", string.Join(", ", animals));
