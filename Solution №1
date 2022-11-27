@@ -1,0 +1,13 @@
+var animals = new string[] { "Tiger", "dog", "cat", "rat", "lion", "ape", "ox" };
+var result = new string[animals.Length];
+var realSize = 0;
+foreach (var value in animals )
+       { 
+        if (value.Length <= 3)
+            {
+                result[realSize] = value;
+                realSize++;
+            }
+       }
+Console.WriteLine(string.Join(Environment.NewLine, result, 0, realSize));
+Console.ReadKey(true);
